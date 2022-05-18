@@ -1,0 +1,4 @@
+ert_main.obj
+fmi_setup_test.obj
+fmi_setup_test_capi.obj
+fmi_setup_test_data.obj

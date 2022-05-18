@@ -1,0 +1,29 @@
+%implements s0_b0_0dobh_ModelInitialize "C"
+
+%function ModelInitialize(block, system) Output
+%assign cfgTxt = ""
+%openfile cfgTxt
+%assign localVarDecl = ""
+%<SLibInsertAsyncTaskInitializeCode(system)>
+%<SLibWriteMachineInitialize()>
+%<SLibCG_TrackDW(0)>\
+%<SLibCG_TrackContStates(0)>\
+%<SLibCGIRDumpSystemUserCode(0, "Start", "Header")>\
+%<SLibCGIRDumpSystemUserCode(0, "Start", "Body")>\
+%<SLibCGIRDumpSystemUserCode(0, "Start", "Trailer")>\
+/* InitializeConditions for Integrator: '<Root>/Integrator' */
+/*@>22a7*/fmi_setup_test_X->/*@>2853*/Integrator_CSTATE/*@>46d*/ = /*@>2275*/fmi_setup_test_P./*@>284d*/Integrator_IC;
+/* InitializeConditions for UnitDelay: '<Root>/Unit Delay' */
+/*@>234f*/fmi_setup_test_DW->/*@>2856*/UnitDelay_DSTATE/*@>47b*/ = /*@>227d*/fmi_setup_test_P./*@>2850*/UnitDelay_InitialCondition;
+%<SLibInsertInitPeriodicCStatesFcn(system)>
+%closefile cfgTxt
+%<cfgTxt>
+%endfunction
+%function ModelInitializeFcnProtoType(block, system) Output
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void ModelInitialize(\
+%assign comma = ""
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(0, 4, fcnProtoType)>
+%endfunction

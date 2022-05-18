@@ -1,0 +1,24 @@
+%implements s0_b0_2znbh_Update "C"
+
+%function Update(block, system) Output
+%assign cfgTxt = ""
+%openfile cfgTxt
+%assign localVarDecl = ""
+%<SLibCG_TrackEI(1)>\
+if (%<(SLibCGIRIsSampleHit(1, 0))>) {
+    /* {S!d310}Update for UnitDelay: '<Root>/Unit Delay' incorporates:
+ *  Inport: '<Root>/ref1'
+ */
+    fmi_setup_test_DW.UnitDelay_DSTATE = fmi_setup_test_U.ref1;
+}
+%closefile cfgTxt
+%<cfgTxt>
+%endfunction
+%function UpdateFcnProtoType(block, system) Output
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void Update(\
+%assign comma = ""
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(0, 2, fcnProtoType)>
+%endfunction

@@ -1,0 +1,7 @@
+-IC:/Users/lordx/Desktop/fmi_test_example
+-IC:/Users/lordx/Desktop/fmi_test_example/fmi_setup_test_ert_rtw
+-ID:/Program\ Files/Matlab/extern/include
+-ID:/Program\ Files/Matlab/simulink/include
+-ID:/Program\ Files/Matlab/rtw/c/src
+-ID:/Program\ Files/Matlab/rtw/c/src/ext_mode/common
+-ID:/Program\ Files/Matlab/rtw/c/ert

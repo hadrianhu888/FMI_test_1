@@ -1,0 +1,25 @@
+{
+ "baseUrl":"support/slwebview_files",
+ "homeHid":1,
+ "initialElement":"",
+ "sections":[
+  {
+   "hid":1,
+   "sid":"fmi_setup_test",
+   "name":"fmi_setup_test",
+   "fullname":"fmi_setup_test",
+   "label":"fmi_setup_test*",
+   "parent":0,
+   "descendants":[
+   ],
+   "hierarchyUrl":"support/slwebview_files/fmi_setup_test_h_1.json",
+   "backingUrl":"support/slwebview_files/fmi_setup_test_m.json"
+  }
+ ],
+ "optViews":[
+ ],
+ "display":{
+  "informer":false
+ },
+ "iconsUrl":"support/slwebview_files/fmi_setup_test_icons.css"
+}

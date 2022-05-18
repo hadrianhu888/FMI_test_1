@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fmiModelDescription
+  fmiVersion="2.0"
+  guid="{f4f6213c-04b1-4e11-8208-fdce89ff1fae}"
+  modelName="fmi_setup_test"
+  generationTool="Simulink 9.6 (R2021b) 14-May-2021 with FMI Kit 2.9 (rtwsfcnfmi.tlc)"
+  generationDateAndTime="2022-05-17T19:46:38"
+  author="lordx"
+  version="1.27"
+  numberOfEventIndicators="0">
+
+  <ModelExchange modelIdentifier="fmi_setup_test"/>
+
+  <DefaultExperiment
+    startTime="0.0"
+    stopTime="10.0"
+    stepSize="0.2"
+  />
+
+  <ModelVariables>
