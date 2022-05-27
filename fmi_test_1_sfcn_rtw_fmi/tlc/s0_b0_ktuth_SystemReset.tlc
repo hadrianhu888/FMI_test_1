@@ -1,0 +1,47 @@
+%implements s0_b0_ktuth_SystemReset "C"
+
+%function SystemReset(block, system) Output
+%assign cfgTxt = ""
+%openfile cfgTxt
+%assign localVarDecl = ""
+%openfile localVarDecl
+
+P_fmi_test_1_T *_rtP;
+X_fmi_test_1_T *_rtX;
+%closefile localVarDecl
+%<SLibCG_TrackContStates(0)>\
+_rtX = %<(SLibCG_SE(SLibGetContStatesStructPtr()))>;
+%<SLibCG_TrackParam(0)>\
+_rtP = %<(SLibCG_SE(SLibGetParamStructPtr()))>;
+/* InitializeConditions for Delay: '<Root>/Delay' */
+%<SLibCG_SetDWV(0, 0, 0, 1, "", -1, "", 0, "_rtP->Delay_InitialCondition")>\
+/* InitializeConditions for Integrator: '<Root>/Integrator' */
+_rtX->Integrator_CSTATE = _rtP->Integrator_IC;
+%closefile cfgTxt
+%<cfgTxt>
+%assign rtmArgSys = ::CompiledModel.System[::CompiledModel.System[::CompiledModel.RTWCGModules.RTWCGModule[0].CGSystemIdx].NonInlinedParentSystemIdx]
+%if SysFcnArgNeeded("SystemReset", rtmArgSys.Interface.RTMArgDef, rtmArgSys.CurrentTID, FcnSysModuleIsRateGrouping(rtmArgSys, "SystemReset"))
+%<SLibCG_AccessArg(0, 1, 0)>
+%endif
+%if SLibCG_ArgAccessed(0, 1, 0)
+%<SLibAccessArg(rtmArgSys.Interface.RTMArgDef, "SystemReset", rtmArgSys.CurrentTID, FcnSysModuleIsRateGrouping(rtmArgSys, "SystemReset"))>
+%endif
+%if (IsModelReferenceBaseSys(rtmArgSys) && (IsModelRefScalableBuild() || GenerateClassInterface)) ||...
+(GenerateClassInterface && SLibIsMultiInstanceServer(rtmArgSys))
+%<SLibCG_UndoAccessArg(0, 1, 0)>
+%endif
+%<LibSetSystemField(system, "CachedSystemResetLocalVars", localVarDecl)>
+%endfunction
+%function SystemResetFcnProtoType(block, system) Output
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void SystemReset(\
+%assign comma = ""
+%if SLibCG_ArgAccessed(0, 1, 0)
+%<comma>%<::tSimStructType> *S\
+%assign comma = ", "
+%<SLibUpdateSymbolForFunction("SystemReset", SLibGetFcnDefinitionRTMSymbolName(), TLC_FALSE)>\
+%endif
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(0, 1, fcnProtoType)>
+%endfunction

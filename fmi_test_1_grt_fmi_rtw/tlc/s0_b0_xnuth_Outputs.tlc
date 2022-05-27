@@ -1,0 +1,29 @@
+%implements s0_b0_xnuth_Outputs "C"
+
+%function Outputs(block, system) Output
+%assign cfgTxt = ""
+%openfile cfgTxt
+%assign localVarDecl = ""
+%<SLibCG_TrackEO(0)>\
+%<SLibCG_TrackEI(0)>\
+/* Outport: '<Root>/output' incorporates:
+ *  Delay: '<Root>/Delay'
+ */
+fmi_test_1_Y.output = fmi_test_1_DW.Delay_DSTATE;
+/* Update for Delay: '<Root>/Delay' incorporates:
+ *  Inport: '<Root>/input'
+ */
+fmi_test_1_DW.Delay_DSTATE = fmi_test_1_U.input;
+%<SLibInsertSolverResetCode()>\
+%closefile cfgTxt
+%<cfgTxt>
+%<LibSetSystemField(system, "CachedOutputLocalVars", localVarDecl)>
+%endfunction
+%function OutputsFcnProtoType(block, system) Output
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void Outputs(\
+%assign comma = ""
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(0, 1, fcnProtoType)>
+%endfunction

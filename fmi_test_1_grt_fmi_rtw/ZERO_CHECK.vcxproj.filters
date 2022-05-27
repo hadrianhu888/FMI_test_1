@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\lordx\Desktop\FMI_test_1\fmi_test_1_grt_fmi_rtw\CMakeFiles\25e2b3aeaf96c83fc38e107e63384b0d\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{9094E5FE-9E2B-388B-A3CA-1709221D73BD}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
