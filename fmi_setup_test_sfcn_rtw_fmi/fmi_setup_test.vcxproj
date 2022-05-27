@@ -1,0 +1,478 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{7D3CAACA-43D8-3001-AE84-33DD358B2490}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>fmi_setup_test</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">F:\GitHubRepos\fmi_test_example\fmi_setup_test_sfcn_rtw_fmi\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">fmi_setup_test.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">fmi_setup_test</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">F:\GitHubRepos\fmi_test_example\fmi_setup_test_sfcn_rtw_fmi\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">fmi_setup_test.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">fmi_setup_test</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">F:\GitHubRepos\fmi_test_example\fmi_setup_test_sfcn_rtw_fmi\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">fmi_setup_test.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">fmi_setup_test</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">F:\GitHubRepos\fmi_test_example\fmi_setup_test_sfcn_rtw_fmi\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">fmi_setup_test.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">fmi_setup_test</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\rtwsfcnfmi\..\include;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\rtwsfcnfmi;F:\GitHubRepos\fmi_test_example\fmi_setup_test_sfcn_rtw_fmi;D:\Program Files\Matlab\extern\include;D:\Program Files\Matlab\simulink\include;D:\Program Files\Matlab\rtw\c\src\matrixmath;D:\Program Files\Matlab\rtw\c\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;FIPXT_SHARED_MODULE;rt_matrx_h;RT_MALLOC;NDEBUG;MATLAB_R2020a_;CMAKE_INTDIR="Debug";fmi_setup_test_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;FIPXT_SHARED_MODULE;rt_matrx_h;RT_MALLOC;NDEBUG;MATLAB_R2020a_;CMAKE_INTDIR=\"Debug\";fmi_setup_test_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\rtwsfcnfmi\..\include;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\rtwsfcnfmi;F:\GitHubRepos\fmi_test_example\fmi_setup_test_sfcn_rtw_fmi;D:\Program Files\Matlab\extern\include;D:\Program Files\Matlab\simulink\include;D:\Program Files\Matlab\rtw\c\src\matrixmath;D:\Program Files\Matlab\rtw\c\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\rtwsfcnfmi\..\include;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\rtwsfcnfmi;F:\GitHubRepos\fmi_test_example\fmi_setup_test_sfcn_rtw_fmi;D:\Program Files\Matlab\extern\include;D:\Program Files\Matlab\simulink\include;D:\Program Files\Matlab\rtw\c\src\matrixmath;D:\Program Files\Matlab\rtw\c\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>		</Message>
+      <Command>setlocal
+"D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\bin\cmake.exe" -E copy F:/GitHubRepos/fmi_test_example/fmi_setup_test_sfcn_rtw_fmi/modelDescription.xml F:/GitHubRepos/fmi_test_example/fmi_setup_test_sfcn_rtw_fmi/FMUArchive/modelDescription.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\bin\cmake.exe" -E copy F:/GitHubRepos/fmi_test_example/fmi_setup_test_sfcn_rtw_fmi/Debug/fmi_setup_test.dll F:/GitHubRepos/fmi_test_example/fmi_setup_test_sfcn_rtw_fmi/FMUArchive/binaries/win64/fmi_setup_test.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+cd F:\GitHubRepos\fmi_test_example\fmi_setup_test_sfcn_rtw_fmi\FMUArchive
+if %errorlevel% neq 0 goto :cmEnd
+F:
+if %errorlevel% neq 0 goto :cmEnd
+"D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\bin\cmake.exe" -E tar cfv F:/GitHubRepos/fmi_test_example/fmi_setup_test_sfcn_rtw_fmi/fmi_setup_test.fmu --format=zip modelDescription.xml binaries model.png
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>D:\Program Files\Matlab\extern\lib\win64\microsoft\libmx.lib;D:\Program Files\Matlab\extern\lib\win64\microsoft\libmex.lib;D:\Program Files\Matlab\extern\lib\win64\microsoft\sf_runtime.lib;Debug\ode1.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>F:/GitHubRepos/fmi_test_example/fmi_setup_test_sfcn_rtw_fmi/Debug/fmi_setup_test.lib</ImportLibrary>
+      <ProgramDataBaseFile>F:/GitHubRepos/fmi_test_example/fmi_setup_test_sfcn_rtw_fmi/Debug/fmi_setup_test.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\rtwsfcnfmi\..\include;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\rtwsfcnfmi;F:\GitHubRepos\fmi_test_example\fmi_setup_test_sfcn_rtw_fmi;D:\Program Files\Matlab\extern\include;D:\Program Files\Matlab\simulink\include;D:\Program Files\Matlab\rtw\c\src\matrixmath;D:\Program Files\Matlab\rtw\c\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;FIPXT_SHARED_MODULE;rt_matrx_h;RT_MALLOC;MATLAB_R2020a_;CMAKE_INTDIR="Release";fmi_setup_test_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;FIPXT_SHARED_MODULE;rt_matrx_h;RT_MALLOC;MATLAB_R2020a_;CMAKE_INTDIR=\"Release\";fmi_setup_test_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\rtwsfcnfmi\..\include;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\rtwsfcnfmi;F:\GitHubRepos\fmi_test_example\fmi_setup_test_sfcn_rtw_fmi;D:\Program Files\Matlab\extern\include;D:\Program Files\Matlab\simulink\include;D:\Program Files\Matlab\rtw\c\src\matrixmath;D:\Program Files\Matlab\rtw\c\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\rtwsfcnfmi\..\include;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\rtwsfcnfmi;F:\GitHubRepos\fmi_test_example\fmi_setup_test_sfcn_rtw_fmi;D:\Program Files\Matlab\extern\include;D:\Program Files\Matlab\simulink\include;D:\Program Files\Matlab\rtw\c\src\matrixmath;D:\Program Files\Matlab\rtw\c\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>		</Message>
+      <Command>setlocal
+"D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\bin\cmake.exe" -E copy F:/GitHubRepos/fmi_test_example/fmi_setup_test_sfcn_rtw_fmi/modelDescription.xml F:/GitHubRepos/fmi_test_example/fmi_setup_test_sfcn_rtw_fmi/FMUArchive/modelDescription.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\bin\cmake.exe" -E copy F:/GitHubRepos/fmi_test_example/fmi_setup_test_sfcn_rtw_fmi/Release/fmi_setup_test.dll F:/GitHubRepos/fmi_test_example/fmi_setup_test_sfcn_rtw_fmi/FMUArchive/binaries/win64/fmi_setup_test.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+cd F:\GitHubRepos\fmi_test_example\fmi_setup_test_sfcn_rtw_fmi\FMUArchive
+if %errorlevel% neq 0 goto :cmEnd
+F:
+if %errorlevel% neq 0 goto :cmEnd
+"D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\bin\cmake.exe" -E tar cfv F:/GitHubRepos/fmi_test_example/fmi_setup_test_sfcn_rtw_fmi/fmi_setup_test.fmu --format=zip modelDescription.xml binaries model.png
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>D:\Program Files\Matlab\extern\lib\win64\microsoft\libmx.lib;D:\Program Files\Matlab\extern\lib\win64\microsoft\libmex.lib;D:\Program Files\Matlab\extern\lib\win64\microsoft\sf_runtime.lib;Release\ode1.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>F:/GitHubRepos/fmi_test_example/fmi_setup_test_sfcn_rtw_fmi/Release/fmi_setup_test.lib</ImportLibrary>
+      <ProgramDataBaseFile>F:/GitHubRepos/fmi_test_example/fmi_setup_test_sfcn_rtw_fmi/Release/fmi_setup_test.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\rtwsfcnfmi\..\include;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\rtwsfcnfmi;F:\GitHubRepos\fmi_test_example\fmi_setup_test_sfcn_rtw_fmi;D:\Program Files\Matlab\extern\include;D:\Program Files\Matlab\simulink\include;D:\Program Files\Matlab\rtw\c\src\matrixmath;D:\Program Files\Matlab\rtw\c\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;FIPXT_SHARED_MODULE;rt_matrx_h;RT_MALLOC;MATLAB_R2020a_;CMAKE_INTDIR="MinSizeRel";fmi_setup_test_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;FIPXT_SHARED_MODULE;rt_matrx_h;RT_MALLOC;MATLAB_R2020a_;CMAKE_INTDIR=\"MinSizeRel\";fmi_setup_test_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\rtwsfcnfmi\..\include;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\rtwsfcnfmi;F:\GitHubRepos\fmi_test_example\fmi_setup_test_sfcn_rtw_fmi;D:\Program Files\Matlab\extern\include;D:\Program Files\Matlab\simulink\include;D:\Program Files\Matlab\rtw\c\src\matrixmath;D:\Program Files\Matlab\rtw\c\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\rtwsfcnfmi\..\include;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\rtwsfcnfmi;F:\GitHubRepos\fmi_test_example\fmi_setup_test_sfcn_rtw_fmi;D:\Program Files\Matlab\extern\include;D:\Program Files\Matlab\simulink\include;D:\Program Files\Matlab\rtw\c\src\matrixmath;D:\Program Files\Matlab\rtw\c\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>		</Message>
+      <Command>setlocal
+"D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\bin\cmake.exe" -E copy F:/GitHubRepos/fmi_test_example/fmi_setup_test_sfcn_rtw_fmi/modelDescription.xml F:/GitHubRepos/fmi_test_example/fmi_setup_test_sfcn_rtw_fmi/FMUArchive/modelDescription.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\bin\cmake.exe" -E copy F:/GitHubRepos/fmi_test_example/fmi_setup_test_sfcn_rtw_fmi/MinSizeRel/fmi_setup_test.dll F:/GitHubRepos/fmi_test_example/fmi_setup_test_sfcn_rtw_fmi/FMUArchive/binaries/win64/fmi_setup_test.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+cd F:\GitHubRepos\fmi_test_example\fmi_setup_test_sfcn_rtw_fmi\FMUArchive
+if %errorlevel% neq 0 goto :cmEnd
+F:
+if %errorlevel% neq 0 goto :cmEnd
+"D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\bin\cmake.exe" -E tar cfv F:/GitHubRepos/fmi_test_example/fmi_setup_test_sfcn_rtw_fmi/fmi_setup_test.fmu --format=zip modelDescription.xml binaries model.png
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>D:\Program Files\Matlab\extern\lib\win64\microsoft\libmx.lib;D:\Program Files\Matlab\extern\lib\win64\microsoft\libmex.lib;D:\Program Files\Matlab\extern\lib\win64\microsoft\sf_runtime.lib;MinSizeRel\ode1.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>F:/GitHubRepos/fmi_test_example/fmi_setup_test_sfcn_rtw_fmi/MinSizeRel/fmi_setup_test.lib</ImportLibrary>
+      <ProgramDataBaseFile>F:/GitHubRepos/fmi_test_example/fmi_setup_test_sfcn_rtw_fmi/MinSizeRel/fmi_setup_test.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\rtwsfcnfmi\..\include;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\rtwsfcnfmi;F:\GitHubRepos\fmi_test_example\fmi_setup_test_sfcn_rtw_fmi;D:\Program Files\Matlab\extern\include;D:\Program Files\Matlab\simulink\include;D:\Program Files\Matlab\rtw\c\src\matrixmath;D:\Program Files\Matlab\rtw\c\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;FIPXT_SHARED_MODULE;rt_matrx_h;RT_MALLOC;MATLAB_R2020a_;CMAKE_INTDIR="RelWithDebInfo";fmi_setup_test_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;FIPXT_SHARED_MODULE;rt_matrx_h;RT_MALLOC;MATLAB_R2020a_;CMAKE_INTDIR=\"RelWithDebInfo\";fmi_setup_test_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\rtwsfcnfmi\..\include;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\rtwsfcnfmi;F:\GitHubRepos\fmi_test_example\fmi_setup_test_sfcn_rtw_fmi;D:\Program Files\Matlab\extern\include;D:\Program Files\Matlab\simulink\include;D:\Program Files\Matlab\rtw\c\src\matrixmath;D:\Program Files\Matlab\rtw\c\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\rtwsfcnfmi\..\include;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\rtwsfcnfmi;F:\GitHubRepos\fmi_test_example\fmi_setup_test_sfcn_rtw_fmi;D:\Program Files\Matlab\extern\include;D:\Program Files\Matlab\simulink\include;D:\Program Files\Matlab\rtw\c\src\matrixmath;D:\Program Files\Matlab\rtw\c\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>		</Message>
+      <Command>setlocal
+"D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\bin\cmake.exe" -E copy F:/GitHubRepos/fmi_test_example/fmi_setup_test_sfcn_rtw_fmi/modelDescription.xml F:/GitHubRepos/fmi_test_example/fmi_setup_test_sfcn_rtw_fmi/FMUArchive/modelDescription.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\bin\cmake.exe" -E copy F:/GitHubRepos/fmi_test_example/fmi_setup_test_sfcn_rtw_fmi/RelWithDebInfo/fmi_setup_test.dll F:/GitHubRepos/fmi_test_example/fmi_setup_test_sfcn_rtw_fmi/FMUArchive/binaries/win64/fmi_setup_test.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+cd F:\GitHubRepos\fmi_test_example\fmi_setup_test_sfcn_rtw_fmi\FMUArchive
+if %errorlevel% neq 0 goto :cmEnd
+F:
+if %errorlevel% neq 0 goto :cmEnd
+"D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\bin\cmake.exe" -E tar cfv F:/GitHubRepos/fmi_test_example/fmi_setup_test_sfcn_rtw_fmi/fmi_setup_test.fmu --format=zip modelDescription.xml binaries model.png
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>D:\Program Files\Matlab\extern\lib\win64\microsoft\libmx.lib;D:\Program Files\Matlab\extern\lib\win64\microsoft\libmex.lib;D:\Program Files\Matlab\extern\lib\win64\microsoft\sf_runtime.lib;RelWithDebInfo\ode1.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>F:/GitHubRepos/fmi_test_example/fmi_setup_test_sfcn_rtw_fmi/RelWithDebInfo/fmi_setup_test.lib</ImportLibrary>
+      <ProgramDataBaseFile>F:/GitHubRepos/fmi_test_example/fmi_setup_test_sfcn_rtw_fmi/RelWithDebInfo/fmi_setup_test.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\rtwsfcnfmi\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/Program Files/Matlab/rtw/c/FMIKit-Simulink-3.0/rtwsfcnfmi/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\bin\cmake.exe" "-SD:/Program Files/Matlab/rtw/c/FMIKit-Simulink-3.0/rtwsfcnfmi" -BF:/GitHubRepos/fmi_test_example/fmi_setup_test_sfcn_rtw_fmi --check-stamp-file F:/GitHubRepos/fmi_test_example/fmi_setup_test_sfcn_rtw_fmi/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\CMakeCCompiler.cmake.in;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\CMakeCCompilerABI.c;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\CMakeCInformation.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\CMakeCXXCompiler.cmake.in;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\CMakeCXXCompilerABI.cpp;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\CMakeCXXInformation.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\CMakeCommonLanguageInclude.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\CMakeCompilerIdDetection.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\CMakeDetermineCCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\CMakeDetermineCXXCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\CMakeDetermineCompileFeatures.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\CMakeDetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\CMakeDetermineCompilerABI.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\CMakeDetermineCompilerId.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\CMakeDetermineRCCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\CMakeDetermineSystem.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\CMakeFindBinUtils.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\CMakeGenericSystem.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\CMakeInitializeConfigs.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\CMakeLanguageInformation.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\CMakeParseImplicitIncludeInfo.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\CMakeParseImplicitLinkInfo.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\CMakeParseLibraryArchitecture.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\CMakeRCCompiler.cmake.in;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\CMakeRCInformation.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\CMakeSystem.cmake.in;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\CMakeSystemSpecificInformation.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\CMakeSystemSpecificInitialize.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\CMakeTestCCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\CMakeTestCXXCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\CMakeTestCompilerCommon.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\CMakeTestRCCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\ADSP-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\ARMCC-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\ARMClang-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\AppleClang-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\Borland-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\Clang-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\Cray-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\GHS-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\GNU-C-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\HP-C-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\IAR-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\Intel-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\MSVC-C.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\MSVC-CXX.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\MSVC-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\NVHPC-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\PGI-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\PathScale-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\SCO-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\TI-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\Watcom-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\XL-C-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\zOS-C-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\CompilerId\VS-10.vcxproj.in;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Internal\FeatureTesting.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Platform\Windows-Determine-CXX.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Platform\Windows-MSVC-C.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Platform\Windows-MSVC.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Platform\Windows.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Platform\WindowsPaths.cmake;F:\GitHubRepos\fmi_test_example\fmi_setup_test_sfcn_rtw_fmi\CMakeFiles\3.22.2\CMakeCCompiler.cmake;F:\GitHubRepos\fmi_test_example\fmi_setup_test_sfcn_rtw_fmi\CMakeFiles\3.22.2\CMakeCXXCompiler.cmake;F:\GitHubRepos\fmi_test_example\fmi_setup_test_sfcn_rtw_fmi\CMakeFiles\3.22.2\CMakeRCCompiler.cmake;F:\GitHubRepos\fmi_test_example\fmi_setup_test_sfcn_rtw_fmi\CMakeFiles\3.22.2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">F:\GitHubRepos\fmi_test_example\fmi_setup_test_sfcn_rtw_fmi\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/Program Files/Matlab/rtw/c/FMIKit-Simulink-3.0/rtwsfcnfmi/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\bin\cmake.exe" "-SD:/Program Files/Matlab/rtw/c/FMIKit-Simulink-3.0/rtwsfcnfmi" -BF:/GitHubRepos/fmi_test_example/fmi_setup_test_sfcn_rtw_fmi --check-stamp-file F:/GitHubRepos/fmi_test_example/fmi_setup_test_sfcn_rtw_fmi/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\CMakeCCompiler.cmake.in;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\CMakeCCompilerABI.c;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\CMakeCInformation.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\CMakeCXXCompiler.cmake.in;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\CMakeCXXCompilerABI.cpp;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\CMakeCXXInformation.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\CMakeCommonLanguageInclude.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\CMakeCompilerIdDetection.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\CMakeDetermineCCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\CMakeDetermineCXXCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\CMakeDetermineCompileFeatures.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\CMakeDetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\CMakeDetermineCompilerABI.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\CMakeDetermineCompilerId.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\CMakeDetermineRCCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\CMakeDetermineSystem.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\CMakeFindBinUtils.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\CMakeGenericSystem.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\CMakeInitializeConfigs.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\CMakeLanguageInformation.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\CMakeParseImplicitIncludeInfo.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\CMakeParseImplicitLinkInfo.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\CMakeParseLibraryArchitecture.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\CMakeRCCompiler.cmake.in;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\CMakeRCInformation.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\CMakeSystem.cmake.in;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\CMakeSystemSpecificInformation.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\CMakeSystemSpecificInitialize.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\CMakeTestCCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\CMakeTestCXXCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\CMakeTestCompilerCommon.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\CMakeTestRCCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\ADSP-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\ARMCC-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\ARMClang-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\AppleClang-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\Borland-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\Clang-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\Cray-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\GHS-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\GNU-C-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\HP-C-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\IAR-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\Intel-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\MSVC-C.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\MSVC-CXX.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\MSVC-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\NVHPC-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\PGI-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\PathScale-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\SCO-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\TI-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\Watcom-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\XL-C-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\zOS-C-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\CompilerId\VS-10.vcxproj.in;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Internal\FeatureTesting.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Platform\Windows-Determine-CXX.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Platform\Windows-MSVC-C.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Platform\Windows-MSVC.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Platform\Windows.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Platform\WindowsPaths.cmake;F:\GitHubRepos\fmi_test_example\fmi_setup_test_sfcn_rtw_fmi\CMakeFiles\3.22.2\CMakeCCompiler.cmake;F:\GitHubRepos\fmi_test_example\fmi_setup_test_sfcn_rtw_fmi\CMakeFiles\3.22.2\CMakeCXXCompiler.cmake;F:\GitHubRepos\fmi_test_example\fmi_setup_test_sfcn_rtw_fmi\CMakeFiles\3.22.2\CMakeRCCompiler.cmake;F:\GitHubRepos\fmi_test_example\fmi_setup_test_sfcn_rtw_fmi\CMakeFiles\3.22.2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">F:\GitHubRepos\fmi_test_example\fmi_setup_test_sfcn_rtw_fmi\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/Program Files/Matlab/rtw/c/FMIKit-Simulink-3.0/rtwsfcnfmi/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\bin\cmake.exe" "-SD:/Program Files/Matlab/rtw/c/FMIKit-Simulink-3.0/rtwsfcnfmi" -BF:/GitHubRepos/fmi_test_example/fmi_setup_test_sfcn_rtw_fmi --check-stamp-file F:/GitHubRepos/fmi_test_example/fmi_setup_test_sfcn_rtw_fmi/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\CMakeCCompiler.cmake.in;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\CMakeCCompilerABI.c;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\CMakeCInformation.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\CMakeCXXCompiler.cmake.in;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\CMakeCXXCompilerABI.cpp;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\CMakeCXXInformation.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\CMakeCommonLanguageInclude.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\CMakeCompilerIdDetection.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\CMakeDetermineCCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\CMakeDetermineCXXCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\CMakeDetermineCompileFeatures.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\CMakeDetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\CMakeDetermineCompilerABI.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\CMakeDetermineCompilerId.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\CMakeDetermineRCCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\CMakeDetermineSystem.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\CMakeFindBinUtils.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\CMakeGenericSystem.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\CMakeInitializeConfigs.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\CMakeLanguageInformation.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\CMakeParseImplicitIncludeInfo.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\CMakeParseImplicitLinkInfo.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\CMakeParseLibraryArchitecture.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\CMakeRCCompiler.cmake.in;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\CMakeRCInformation.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\CMakeSystem.cmake.in;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\CMakeSystemSpecificInformation.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\CMakeSystemSpecificInitialize.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\CMakeTestCCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\CMakeTestCXXCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\CMakeTestCompilerCommon.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\CMakeTestRCCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\ADSP-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\ARMCC-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\ARMClang-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\AppleClang-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\Borland-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\Clang-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\Cray-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\GHS-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\GNU-C-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\HP-C-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\IAR-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\Intel-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\MSVC-C.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\MSVC-CXX.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\MSVC-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\NVHPC-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\PGI-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\PathScale-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\SCO-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\TI-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\Watcom-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\XL-C-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\zOS-C-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\CompilerId\VS-10.vcxproj.in;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Internal\FeatureTesting.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Platform\Windows-Determine-CXX.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Platform\Windows-MSVC-C.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Platform\Windows-MSVC.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Platform\Windows.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Platform\WindowsPaths.cmake;F:\GitHubRepos\fmi_test_example\fmi_setup_test_sfcn_rtw_fmi\CMakeFiles\3.22.2\CMakeCCompiler.cmake;F:\GitHubRepos\fmi_test_example\fmi_setup_test_sfcn_rtw_fmi\CMakeFiles\3.22.2\CMakeCXXCompiler.cmake;F:\GitHubRepos\fmi_test_example\fmi_setup_test_sfcn_rtw_fmi\CMakeFiles\3.22.2\CMakeRCCompiler.cmake;F:\GitHubRepos\fmi_test_example\fmi_setup_test_sfcn_rtw_fmi\CMakeFiles\3.22.2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">F:\GitHubRepos\fmi_test_example\fmi_setup_test_sfcn_rtw_fmi\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/Program Files/Matlab/rtw/c/FMIKit-Simulink-3.0/rtwsfcnfmi/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\bin\cmake.exe" "-SD:/Program Files/Matlab/rtw/c/FMIKit-Simulink-3.0/rtwsfcnfmi" -BF:/GitHubRepos/fmi_test_example/fmi_setup_test_sfcn_rtw_fmi --check-stamp-file F:/GitHubRepos/fmi_test_example/fmi_setup_test_sfcn_rtw_fmi/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\CMakeCCompiler.cmake.in;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\CMakeCCompilerABI.c;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\CMakeCInformation.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\CMakeCXXCompiler.cmake.in;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\CMakeCXXCompilerABI.cpp;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\CMakeCXXInformation.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\CMakeCommonLanguageInclude.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\CMakeCompilerIdDetection.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\CMakeDetermineCCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\CMakeDetermineCXXCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\CMakeDetermineCompileFeatures.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\CMakeDetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\CMakeDetermineCompilerABI.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\CMakeDetermineCompilerId.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\CMakeDetermineRCCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\CMakeDetermineSystem.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\CMakeFindBinUtils.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\CMakeGenericSystem.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\CMakeInitializeConfigs.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\CMakeLanguageInformation.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\CMakeParseImplicitIncludeInfo.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\CMakeParseImplicitLinkInfo.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\CMakeParseLibraryArchitecture.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\CMakeRCCompiler.cmake.in;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\CMakeRCInformation.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\CMakeSystem.cmake.in;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\CMakeSystemSpecificInformation.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\CMakeSystemSpecificInitialize.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\CMakeTestCCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\CMakeTestCXXCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\CMakeTestCompilerCommon.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\CMakeTestRCCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\ADSP-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\ARMCC-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\ARMClang-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\AppleClang-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\Borland-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\Clang-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\Cray-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\GHS-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\GNU-C-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\HP-C-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\IAR-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\Intel-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\MSVC-C.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\MSVC-CXX.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\MSVC-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\NVHPC-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\PGI-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\PathScale-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\SCO-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\TI-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\Watcom-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\XL-C-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\zOS-C-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\CompilerId\VS-10.vcxproj.in;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Internal\FeatureTesting.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Platform\Windows-Determine-CXX.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Platform\Windows-MSVC-C.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Platform\Windows-MSVC.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Platform\Windows.cmake;D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\share\cmake-3.22\Modules\Platform\WindowsPaths.cmake;F:\GitHubRepos\fmi_test_example\fmi_setup_test_sfcn_rtw_fmi\CMakeFiles\3.22.2\CMakeCCompiler.cmake;F:\GitHubRepos\fmi_test_example\fmi_setup_test_sfcn_rtw_fmi\CMakeFiles\3.22.2\CMakeCXXCompiler.cmake;F:\GitHubRepos\fmi_test_example\fmi_setup_test_sfcn_rtw_fmi\CMakeFiles\3.22.2\CMakeRCCompiler.cmake;F:\GitHubRepos\fmi_test_example\fmi_setup_test_sfcn_rtw_fmi\CMakeFiles\3.22.2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">F:\GitHubRepos\fmi_test_example\fmi_setup_test_sfcn_rtw_fmi\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\include\fmi2Functions.h" />
+    <ClInclude Include="D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\include\fmi2FunctionTypes.h" />
+    <ClInclude Include="D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\include\fmi2TypesPlatform.h" />
+    <ClCompile Include="D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\rtwsfcnfmi\fmi2Functions.c" />
+    <ClInclude Include="D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\rtwsfcnfmi\sfunction.h" />
+    <ClCompile Include="D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\rtwsfcnfmi\sfunction.c" />
+    <ClInclude Include="F:\GitHubRepos\fmi_test_example\fmi_setup_test_sfcn_rtw_fmi\sfcn_fmi.h" />
+    <XML Include="F:\GitHubRepos\fmi_test_example\fmi_setup_test_sfcn_rtw_fmi\modelDescription.xml">
+    </XML>
+    <ClCompile Include="D:\Program Files\Matlab\rtw\c\src\rt_matrx.c" />
+    <ClCompile Include="F:\GitHubRepos\fmi_test_example\fmi_setup_test_sfcn_rtw_fmi\model_interface.c" />
+    <ClCompile Include="F:\GitHubRepos\fmi_test_example\fmi_setup_test_sfcn_rtw_fmi\rtGetInf.c" />
+    <ClCompile Include="F:\GitHubRepos\fmi_test_example\fmi_setup_test_sfcn_rtw_fmi\rtGetNaN.c" />
+    <ClCompile Include="F:\GitHubRepos\fmi_test_example\fmi_setup_test_sfcn_rtw_fmi\sfcn_fmi.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="F:\GitHubRepos\fmi_test_example\fmi_setup_test_sfcn_rtw_fmi\ZERO_CHECK.vcxproj">
+      <Project>{9C407AA8-C7DA-3820-8414-B5836588791F}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\GitHubRepos\fmi_test_example\fmi_setup_test_sfcn_rtw_fmi\ode1.vcxproj">
+      <Project>{E70D6427-AF42-392F-816E-5C4C01F5E5AE}</Project>
+      <Name>ode1</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

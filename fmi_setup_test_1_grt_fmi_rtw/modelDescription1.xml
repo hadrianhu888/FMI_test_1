@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fmiModelDescription
+  fmiVersion="3.0"
+  instantiationToken="{a77ac3fd-07e1-40cc-af9c-e037e428724a}"
+  modelName="fmi_setup_test_1"
+  generationTool="Simulink 9.6 (R2021b) 14-May-2021 with FMI Kit 3.0 (grtfmi.tlc, FixedStepDiscrete, 0.2 s)"
+  generationDateAndTime="2022-05-27T18:30:24"
+  author="lordx"
+  version="1.53">
+
+  <CoSimulation
+    modelIdentifier="fmi_setup_test_1"
+    canBeInstantiatedOnlyOncePerProcess="true"
+    canHandleVariableCommunicationStepSize="true">
+  </CoSimulation>

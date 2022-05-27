@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fmiBuildDescription fmiVersion="3.0">
+
+  <BuildConfiguration modelIdentifier="fmi_setup_test">
+    <SourceFileSet>
+      <SourceFile name="fmi3Functions.c"/>
+        <SourceFile name="fmi_setup_test.c"/>
+        <SourceFile name="fmi_setup_test_capi.c"/>
+    </SourceFileSet>
+  </BuildConfiguration>
+
+</fmiBuildDescription>

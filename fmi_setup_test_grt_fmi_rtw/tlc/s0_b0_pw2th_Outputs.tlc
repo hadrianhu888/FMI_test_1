@@ -1,0 +1,37 @@
+%implements s0_b0_pw2th_Outputs "C"
+
+%function Outputs(block, system) Output
+%assign cfgTxt = ""
+%openfile cfgTxt
+%assign localVarDecl = ""
+%<SLibCG_TrackEO(0)>\
+%<SLibCG_TrackEI(4)>\
+%<SLibCG_TrackEI(3)>\
+%<SLibCG_TrackEI(2)>\
+%<SLibCG_TrackEI(1)>\
+%<SLibCG_TrackEI(0)>\
+/* Outport: '<Root>/output' incorporates:
+ *  Inport: '<Root>/input'
+ *  Inport: '<Root>/input1'
+ *  Inport: '<Root>/input2'
+ *  Inport: '<Root>/input3'
+ *  Inport: '<Root>/input4'
+ *  Product: '<Root>/Divide'
+ *  Sum: '<Root>/Add'
+ *  Sum: '<Root>/Add1'
+ *  Sum: '<Root>/Add2'
+ */
+fmi_setup_test_Y.output = (((fmi_setup_test_U.input / fmi_setup_test_U.input1 + fmi_setup_test_U.input4) + fmi_setup_test_U.input1) + (fmi_setup_test_U.input2 + fmi_setup_test_U.input3)) + fmi_setup_test_U.input3;
+%<SLibInsertSolverResetCode()>\
+%closefile cfgTxt
+%<cfgTxt>
+%<LibSetSystemField(system, "CachedOutputLocalVars", localVarDecl)>
+%endfunction
+%function OutputsFcnProtoType(block, system) Output
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void Outputs(\
+%assign comma = ""
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(0, 1, fcnProtoType)>
+%endfunction

@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\rtwsfcnfmi\fmi2Functions.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\rtwsfcnfmi\sfunction.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Program Files\Matlab\rtw\c\src\rt_matrx.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\GitHubRepos\fmi_test_example\fmi_setup_test_sfcn_rtw_fmi\model_interface.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\GitHubRepos\fmi_test_example\fmi_setup_test_sfcn_rtw_fmi\rtGetInf.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\GitHubRepos\fmi_test_example\fmi_setup_test_sfcn_rtw_fmi\rtGetNaN.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\GitHubRepos\fmi_test_example\fmi_setup_test_sfcn_rtw_fmi\sfcn_fmi.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\include\fmi2Functions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\include\fmi2FunctionTypes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\include\fmi2TypesPlatform.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\rtwsfcnfmi\sfunction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\GitHubRepos\fmi_test_example\fmi_setup_test_sfcn_rtw_fmi\sfcn_fmi.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\rtwsfcnfmi\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <XML Include="F:\GitHubRepos\fmi_test_example\fmi_setup_test_sfcn_rtw_fmi\modelDescription.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{1035EE91-0CC9-344F-9957-81A86F7FA1F1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{09023FE0-3521-30E9-824E-0A3043719C83}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

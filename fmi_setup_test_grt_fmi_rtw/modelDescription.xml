@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fmiModelDescription
+  fmiVersion="3.0"
+  instantiationToken="{0b594536-b15d-4d94-8666-4e345c6629df}"
+  modelName="fmi_setup_test"
+  generationTool="Simulink 9.6 (R2021b) 14-May-2021 with FMI Kit 3.0 (grtfmi.tlc, FixedStepDiscrete, 0.2 s)"
+  generationDateAndTime="2022-05-27T18:27:54"
+  author="lordx"
+  version="1.51">
+
+  <CoSimulation
+    modelIdentifier="fmi_setup_test"
+    canBeInstantiatedOnlyOncePerProcess="true"
+    canHandleVariableCommunicationStepSize="true">
+  </CoSimulation>
+
+  <DefaultExperiment
+    startTime="0.0"
+    stopTime="10.0"
+    stepSize="0.2"/>
+
+  <ModelVariables>
+
+    <!-- Independent Variable -->
+    <Float64 name="time2" valueReference="0" causality="independent" variability="continuous"/>
+
+    <!-- Parameters -->
+
+    <!-- Inputs -->
+    <Float32 name="input" valueReference="1" causality="input" start="0"/>
+    <Float32 name="input1" valueReference="2" causality="input" start="0"/>
+    <Float32 name="input2" valueReference="3" causality="input" start="0"/>
+    <Float32 name="input3" valueReference="4" causality="input" start="0"/>
+    <Float32 name="input4" valueReference="5" causality="input" start="0"/>
+
+    <!-- Outputs -->
+    <Float32 name="output" valueReference="6" causality="output"/>
+
+  </ModelVariables>
+
+  <ModelStructure>
+    <Output valueReference="6"/>
+    <InitialUnknown valueReference="6"/>
+  </ModelStructure>
+
+</fmiModelDescription>

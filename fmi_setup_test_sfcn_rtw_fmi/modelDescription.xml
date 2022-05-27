@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fmiModelDescription
+  fmiVersion="2.0"
+  guid="{e6555476-175c-42f2-bcb5-1e5ebed08809}"
+  modelName="fmi_setup_test"
+  generationTool="Simulink 9.6 (R2021b) 14-May-2021 with FMI Kit 3.0 (rtwsfcnfmi.tlc)"
+  generationDateAndTime="2022-05-27T18:26:02"
+  author="lordx"
+  version="1.51"
+  numberOfEventIndicators="0">
+
+  <ModelExchange modelIdentifier="fmi_setup_test"/>
+
+  <DefaultExperiment
+    startTime="0.0"
+    stopTime="10.0"
+    stepSize="0.2"
+  />
+
+  <ModelVariables>
+
+    <!-- Parameters -->
+
+    <!-- Inputs -->
+    <ScalarVariable name="input" valueReference="1" causality="input">
+      <Real start="0"/>
+    </ScalarVariable>
+    <ScalarVariable name="input1" valueReference="2" causality="input">
+      <Real start="0"/>
+    </ScalarVariable>
+    <ScalarVariable name="input2" valueReference="3" causality="input">
+      <Real start="0"/>
+    </ScalarVariable>
+    <ScalarVariable name="input3" valueReference="4" causality="input">
+      <Real start="0"/>
+    </ScalarVariable>
+    <ScalarVariable name="input4" valueReference="5" causality="input">
+      <Real start="0"/>
+    </ScalarVariable>
+
+    <!-- Outputs -->
+    <ScalarVariable name="output" valueReference="6" causality="output">
+      <Real/>
+    </ScalarVariable>
+
+    <!-- Continuous States -->
+
+  </ModelVariables>
+
+  <ModelStructure>
+    <Outputs>
+      <Unknown index="6"/>
+    </Outputs>
+  </ModelStructure>
+
+</fmiModelDescription>
+

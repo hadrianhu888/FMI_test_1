@@ -1,0 +1,10 @@
+^F:\GITHUBREPOS\FMI_TEST_EXAMPLE\FMI_SETUP_TEST_1_GRT_FMI_RTW\CMAKEFILES\9B548B7A03B3E8D4DD8DB2F7861BE923\GENERATE.STAMP.RULE
+setlocal
+"D:\Program Files\Matlab\rtw\c\FMIKit-Simulink-3.0\cmake-3.22.2-windows-x86_64\bin\cmake.exe" "-SD:/Program Files/Matlab/rtw/c/FMIKit-Simulink-3.0/grtfmi" -BF:/GitHubRepos/fmi_test_example/fmi_setup_test_1_grt_fmi_rtw --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file F:/GitHubRepos/fmi_test_example/fmi_setup_test_1_grt_fmi_rtw/fmi_setup_test_1.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
